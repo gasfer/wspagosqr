@@ -1,0 +1,11 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=db_pagos_qr
+    username: sa
+    password: 12345
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
